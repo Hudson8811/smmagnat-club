@@ -1,0 +1,37 @@
+.topics {
+  margin: 0 auto 0 74px;
+  &-list {
+    // counter-reset: item;
+    &__item {
+      display: flex;
+      &:not(:last-of-type) {
+        margin-bottom: 22px;
+      }
+
+      &-counter {
+        margin-right: 1px;
+      }
+
+      // &::before {
+      //   counter-increment: item;
+      //   content: "" counter(item) ". ";
+      // }
+    }
+  }
+
+  &__title {
+    position: relative;
+    margin-bottom: 42px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -50px;
+      left: -52px;
+      right: 0;
+      height: 62px;
+      background-image: url("../images/topics/topics-underline.png");
+      background-repeat: no-repeat;
+    }
+  }
+}

@@ -3,9 +3,133 @@ extends ../layouts/default
 block vars
 	-
 		const page = {
-			title: 'Главная'
+			title: 'smmagnat Club'
 		};
 
 block main
-	section.hero 
-		
+	.content
+		.info
+			.info__half
+				.about
+					.about__title
+						span.about-text.about-text_highlighted
+							| Закрытый клуб с smmagnat
+					
+					.about__description
+						span.about-text.about-text_highlighted
+							| 2 тематических эфира в неделю.
+						span.about-text.about-text_highlighted
+							| 1 эфир с ответами на вопросы
+						span.about-text.about-text_highlighted
+							| и разборы ваших ситуаций.
+
+					.about__price
+						span.about-text.about-text_highlighted.about__price-item
+							| Вступление 2 500 ₽
+						span.about-text.about-text_white.about-text_crossed
+							| 5 000 ₽
+
+					.about__renewal
+						span.about-text.about-text_highlighted
+							| Продление 1 000 ₽	
+
+					.about__start
+						span.about-text.about-text_highlighted.about-text_highlighted-orange.about-text_white
+							| Старт 20.07						
+
+			.info__half
+				.topics
+					p.title.topics__title
+						| Темы эфиров:
+
+					ul.topics-list 
+						li.topics-list__item
+							span.topics-list__item-counter
+								| 1. 
+							span.topics-list__item-text
+								| Как я помогаю бизнесу которые<br>страдают от карантинных мер						
+						li.topics-list__item
+							span.topics-list__item-counter
+								| 2. 
+							span.topics-list__item-text
+								| Почему я создал ТикТок дом?
+						li.topics-list__item
+							span.topics-list__item-counter
+								| 3. 
+							span.topics-list__item-text
+								| Почему успешные SMM/маркетологи не создают<br>свои бизнесы, хотя знают все о продвижении
+						li.topics-list__item
+							span.topics-list__item-counter
+								| 4. 
+							span.topics-list__item-text
+								| Как бороться с выгоранием в SMM и<br>откуда черпать вдохновение
+						li.topics-list__item
+							span.topics-list__item-counter
+								| 5. 
+							span.topics-list__item-text
+								| Мой распорядок дня. Как всё успевать?
+						li.topics-list__item
+							span.topics-list__item-counter
+								| 6. 
+							span.topics-list__item-text
+								| Какие нужны навыки для того, чтобы<br>открыть SMM-агентство?
+						li.topics-list__item
+							span.topics-list__item-counter
+								| 7. 
+							span.topics-list__item-text
+								| Как выставлять цену за свою работу<br>и как понять, что пора просить больше?
+						li.topics-list__item
+							span.topics-list__item-counter
+								| 8. 
+							span.topics-list__item-text
+								| Потолок развития в СММ. Можно ли<br>перерасти нишу и что потом делать?
+						li.topics-list__item
+							span.topics-list__item-counter
+								| 9. 
+							span.topics-list__item-text
+								| Когда специалисты по SMM будут никому не нужны?
+						li.topics-list__item
+							span.topics-list__item-counter
+								| 10. 
+							span.topics-list__item-text
+								| Новые каналы заработка в SMM
+
+		form.form
+			.form__drawings
+
+			.form__heading
+				p.title.form__heading-title
+					| Вступить в клуб
+
+				p.form__heading-description
+					| После оплаты на указанный email придёт подробная инструкция по дальнейшим действиям 
+			
+			input(type="email" placeholder="Почта" required).form__input
+			input(type="text" placeholder="Ник в Instagram" required).form__input
+
+			.form__type
+				.form__type-button.form__type-button_active
+					input(type="radio" name="payment" value="buy" required checked).form__type-radio
+
+					.form__type-text
+						span.form__type-text_name
+							| Вступить
+						span.form__type-text_price 
+							| 2 500 ₽
+
+				.form__type-button
+					input(type="radio" name="payment" value="renewal" required).form__type-radio
+
+					.form__type-text
+						span.form__type-text_name
+							| Продление
+						span.form__type-text_price 
+							| 1 000 ₽
+
+			label.form__privacy
+				input(type="checkbox" required)
+				span.form__privacy-checkbox
+				span.form__privacy-text Нажимая на кнопку вы соглашаетесь на обработку ваших <a href="#" class="form__privacy-link">персональных данных.</a>
+			
+			button(type="submit").form__button
+				| Перейти к оплате

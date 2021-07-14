@@ -8,15 +8,12 @@ html {
     display: none;
   }
 
-  ::-webkit-scrollbar-track {
-  }
-
   ::-webkit-scrollbar-track-piece {
     background-color: black;
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: $purpleColor;
+    background-color: $orange;
     border-radius: none;
   }
 
@@ -28,47 +25,47 @@ html {
     background-color: #666;
   }
 
-  font-size: vw(21); //$fs-main;
+  font-size: 21px; //$fs-main;
 
-  @include media(1200) {
-    font-size: vw(18, 1200); //$fs-main;
-  }
+  // @include media(1200) {
+  //   font-size: vw(18, 1200); //$fs-main;
+  // }
 
-  @include media(768) {
-    font-size: vw(21, 376);
-  }
+  // @include media(768) {
+  //   font-size: vw(21, 376);
+  // }
 }
 
 body {
-  font-family: $mainFont;
+  font-family: $mainFont--book;
   font-weight: 400;
-  color: $textMainColor;
+  color: $white;
   background-color: #131313;
 }
 
-a {
-  color: $selectColor1;
-  text-decoration: underline;
-  &:hover {
-    color: $selectColor2;
-    text-decoration: none;
-  }
-}
+// a {
+//   color: $selectColor1;
+//   text-decoration: underline;
+//   &:hover {
+//     color: $selectColor2;
+//     text-decoration: none;
+//   }
+// }
 
-.container {
-  width: 100%;
-  max-width: vw(1330);
-  padding: 0 vw(15);
-  margin: 0 auto;
+// .container {
+//   width: 100%;
+//   max-width: vw(1330);
+//   padding: 0 vw(15);
+//   margin: 0 auto;
 
-  @include media(1200) {
-    padding: 0 vw(15, 1200);
-  }
+//   @include media(1200) {
+//     padding: 0 vw(15, 1200);
+//   }
 
-  @include media(768) {
-    padding: 0 vw(20, 376);
-  }
-}
+//   @include media(768) {
+//     padding: 0 vw(20, 376);
+//   }
+// }
 
 .visually-hidden {
   position: absolute;

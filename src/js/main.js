@@ -1,1 +1,1 @@
-//= ./partials/main.js
+//= partials/formPaymentType.js

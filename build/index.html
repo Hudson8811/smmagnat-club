@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="css/main.min.css" rel="stylesheet">
+    <title>smmagnat Club</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container"> 
+        <div class="header-wrapper"><img class="header__smmagnat" src="images/header/smmagnat.svg" alt="Логотип smmagnat"><img class="header__logo" src="images/header/header-logo.png" alt="Логотип smmagnat Club">
+          <div class="header-contacts"><a class="header-contacts__item" href="mailto:info@smmagnat.ru">info@smmagnat.ru</a><span class="header-contacts__text">По всем вопросам</span></div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="content">
+        <div class="info">
+          <div class="info__half">
+            <div class="about">
+              <div class="about__title"><span class="about-text about-text_highlighted">Закрытый клуб с smmagnat</span></div>
+              <div class="about__description"><span class="about-text about-text_highlighted">2 тематических эфира в неделю.</span><span class="about-text about-text_highlighted">1 эфир с ответами на вопросы</span><span class="about-text about-text_highlighted">и разборы ваших ситуаций.</span></div>
+              <div class="about__price"><span class="about-text about-text_highlighted about__price-item">Вступление 2 500 ₽</span><span class="about-text about-text_white about-text_crossed">5 000 ₽</span></div>
+              <div class="about__renewal"><span class="about-text about-text_highlighted">Продление 1 000 ₽	</span></div>
+              <div class="about__start"><span class="about-text about-text_highlighted about-text_highlighted-orange about-text_white">Старт 20.07						</span></div>
+            </div>
+          </div>
+          <div class="info__half">
+            <div class="topics">
+              <p class="title topics__title">Темы эфиров:</p>
+              <ul class="topics-list"> 
+                <li class="topics-list__item"><span class="topics-list__item-counter">1. </span><span class="topics-list__item-text">Как я помогаю бизнесу которые<br>страдают от карантинных мер						</span></li>
+                <li class="topics-list__item"><span class="topics-list__item-counter">2. </span><span class="topics-list__item-text">Почему я создал ТикТок дом?</span></li>
+                <li class="topics-list__item"><span class="topics-list__item-counter">3. </span><span class="topics-list__item-text">Почему успешные SMM/маркетологи не создают<br>свои бизнесы, хотя знают все о продвижении</span></li>
+                <li class="topics-list__item"><span class="topics-list__item-counter">4. </span><span class="topics-list__item-text">Как бороться с выгоранием в SMM и<br>откуда черпать вдохновение</span></li>
+                <li class="topics-list__item"><span class="topics-list__item-counter">5. </span><span class="topics-list__item-text">Мой распорядок дня. Как всё успевать?</span></li>
+                <li class="topics-list__item"><span class="topics-list__item-counter">6. </span><span class="topics-list__item-text">Какие нужны навыки для того, чтобы<br>открыть SMM-агентство?</span></li>
+                <li class="topics-list__item"><span class="topics-list__item-counter">7. </span><span class="topics-list__item-text">Как выставлять цену за свою работу<br>и как понять, что пора просить больше?</span></li>
+                <li class="topics-list__item"><span class="topics-list__item-counter">8. </span><span class="topics-list__item-text">Потолок развития в СММ. Можно ли<br>перерасти нишу и что потом делать?</span></li>
+                <li class="topics-list__item"><span class="topics-list__item-counter">9. </span><span class="topics-list__item-text">Когда специалисты по SMM будут никому не нужны?</span></li>
+                <li class="topics-list__item"><span class="topics-list__item-counter">10. </span><span class="topics-list__item-text">Новые каналы заработка в SMM</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <form class="form">
+          <div class="form__drawings"></div>
+          <div class="form__heading">
+            <p class="title form__heading-title">Вступить в клуб</p>
+            <p class="form__heading-description">После оплаты на указанный email придёт подробная инструкция по дальнейшим действиям </p>
+          </div>
+          <input class="form__input" type="email" placeholder="Почта" required>
+          <input class="form__input" type="text" placeholder="Ник в Instagram" required>
+          <div class="form__type">
+            <div class="form__type-button form__type-button_active">
+              <input class="form__type-radio" type="radio" name="payment" value="buy" required checked>
+              <div class="form__type-text"><span class="form__type-text_name">Вступить</span><span class="form__type-text_price">
+                   2 500 ₽</span></div>
+            </div>
+            <div class="form__type-button">
+              <input class="form__type-radio" type="radio" name="payment" value="renewal" required>
+              <div class="form__type-text"><span class="form__type-text_name">Продление</span><span class="form__type-text_price">
+                   1 000 ₽</span></div>
+            </div>
+          </div>
+          <label class="form__privacy">
+            <input type="checkbox" required><span class="form__privacy-checkbox"></span><span class="form__privacy-text">Нажимая на кнопку вы соглашаетесь на обработку ваших <a href="#" class="form__privacy-link">персональных данных.</a></span>
+          </label>
+          <button class="form__button" type="submit">Перейти к оплате</button>
+        </form>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-half footer-half__left">
+        <div class="footer-text footer-text__top">Москва, Россия</div><a class="footer-text footer-text__bottom footer-link" href="#">Политика обработки персональных данных</a>
+      </div>
+      <div class="footer-half footer-half__right"><a class="footer-text footer-text__top footer-link" href="mailto:info@smmagnat.ru">info@smmagnat.ru</a><a class="footer-text footer-text__bottom footer-link" href="#">Instagram</a></div>
+    </footer>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

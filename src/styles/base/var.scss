@@ -12,35 +12,39 @@ $media-list: (
 /* шрифты */
 $mainFont: "ALS Hauss", "Arial", sans-serif;
 $mainFont--book: "ALS Hauss Book", "Arial", sans-serif;
-$headingFont: "Druk Text Wide", "Arial", sans-serif;
-$secondFont: "Denistina", "Arial", sans-serif;
-$thirdFont: "Levi Brush", "Arial", sans-serif;
+// $headingFont: "Druk Text Wide", "Arial", sans-serif;
+// $secondFont: "Denistina", "Arial", sans-serif;
+// $thirdFont: "Levi Brush", "Arial", sans-serif;
 
-$fs-main: vw(21);
-$fs-h1: 39px;
-$fs-h2: 31px;
-$fs-h3: 25px;
-$fs-h4: 24px;
-$fs-h5: 19px;
-$fs-h6: 16px;
+// $fs-main: vw(21);
+// $fs-h1: 39px;
+// $fs-h2: 31px;
+// $fs-h3: 25px;
+// $fs-h4: 24px;
+// $fs-h5: 19px;
+// $fs-h6: 16px;
 
 /* цвета */
-$textMainColor: #52525a;
-$textTitleColor: #262c36;
-$disableColor: #6b7285;
-$bgDisableColor: #e5e7e6;
-$bgGrayColor: #f4f4f4;
+$black: #000000;
+$white: #ffffff;
+$orange: #ff5210;
 
-$purpleColor: #6d16e8;
-$purple2Color: #886eff;
-$purple3Color: #7f0eed;
+// $textMainColor: #52525a;
+// $textTitleColor: #262c36;
+// $disableColor: #6b7285;
+// $bgDisableColor: #e5e7e6;
+// $bgGrayColor: #f4f4f4;
 
-$breadCrumbsColor: #bebfcf;
-$breadCrumbsColorHover: #3e5dc8;
-$breadCrumbsColorLast: #262c36;
+// $purpleColor: #6d16e8;
+// $purple2Color: #886eff;
+// $purple3Color: #7f0eed;
 
-$selectColor1: #426cff;
-$selectColor2: #3e5dc8;
+// $breadCrumbsColor: #bebfcf;
+// $breadCrumbsColorHover: #3e5dc8;
+// $breadCrumbsColorLast: #262c36;
 
-$linkMainColor: $selectColor1;
-$linkHoverColor: $selectColor2;
+// $selectColor1: #426cff;
+// $selectColor2: #3e5dc8;
+
+// $linkMainColor: $selectColor1;
+// $linkHoverColor: $selectColor2;

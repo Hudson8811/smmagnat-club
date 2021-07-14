@@ -13,8 +13,13 @@
 
 /* components */
 @import "partials/title";
+// @import "partials/checkbox-radio.scss";
 
 @import "partials/header";
 @import "partials/footer";
 
 /*blocks*/
+@import "blocks/content";
+@import "blocks/about";
+@import "blocks/topics";
+@import "blocks/form";

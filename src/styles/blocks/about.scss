@@ -1,0 +1,64 @@
+.about {
+  margin: 0 93px 0 auto;
+  width: 424px;
+  padding-top: 192px;
+
+  &-text {
+    font-family: $mainFont;
+    font-size: 27px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    letter-spacing: -0.54px;
+    color: $black;
+
+    &_white {
+      color: $white;
+    }
+
+    &_highlighted {
+      display: inline-block;
+      padding: 0 13px 2px;
+      background-color: $white;
+
+      &-orange {
+        background-color: $orange;
+      }
+    }
+
+    &_crossed {
+      position: relative;
+      padding: 0 18px 0 13px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 6px;
+        left: -18px;
+        right: -13px;
+        height: 24px;
+        background-image: url("../images/about/cross-line.png");
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 22px;
+  }
+
+  &__description {
+    margin-bottom: 54px;
+  }
+
+  &__price {
+    margin-bottom: 24px;
+
+    &-item {
+      margin-right: 16px;
+    }
+  }
+
+  &__renewal {
+    margin-bottom: 30px;
+  }
+}

@@ -1,93 +1,52 @@
 .header {
   position: absolute;
-  z-index: 2;
+  top: 0;
+  right: 0;
   left: 0;
-  top: vw(36);
-  width: 100%;
 
-  @include media(768) {
-    top: vw(17, 376);
+  &-container {
+    margin: 0 auto;
+    max-width: 1920px;
+    width: 100%;
+    padding: 143px 187px 0 188px;
   }
 
-  &__container {
+  &-wrapper {
+    position: relative;
     display: flex;
     align-items: center;
-    width: 100%;
-    max-width: vw(1770);
-    margin: 0 auto;
-    padding: 0 vw(15);
+    justify-content: space-between;
+    height: 139px;
+  }
+
+  &-contacts {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+
+    &__item {
+      transition: color ease-out 0.3s;
+
+      @include hover {
+        color: $orange;
+        transition: color ease-out 0.3s;
+      }
+    }
+
+    &__text {
+      font-size: 18px;
+      font-weight: 300;
+      opacity: 0.6;
+    }
   }
 
   &__logo {
-    width: vw(210);
-    margin-right: auto;
-
-    @include media(768) {
-      width: vw(66, 376);
-    }
-
-    img {
-      display: block;
-      max-width: 100%;
-      height: auto;
-    }
-  }
-
-  &__contact {
-    text-align: center;
-
-    &-email {
-      display: inline-block;
-      vertical-align: top;
-      font-family: $mainFont--book;
-      line-height: 1;
-      color: #ffffff;
-      letter-spacing: -0.02047em;
-      text-decoration: none;
-
-      @include media(768) {
-        font-size: vw(16, 376);
-      }
-
-      @include hover {
-        color: $purpleColor;
-      }
-    }
-
-    &-text {
-      margin-top: vw(-5);
-      font-size: vw(16);
-      line-height: 1;
-      color: #ffffff;
-      letter-spacing: -0.02em;
-      font-weight: 300;
-
-      @include media(768) {
-        margin-top: vw(-5, 376);
-        font-size: vw(14, 376);
-      }
-    }
-  }
-
-  &__button {
-    margin-left: vw(83);
-    padding: vw(20) vw(35);
-    font-size: vw(21);
-    line-height: 1;
-    color: #ffffff;
-    border: 1px solid #ffffff;
-    background-color: transparent;
-    cursor: pointer;
-
-    transition: all 0.3s ease;
-
-    @include media(768) {
-      display: none;
-    }
-
-    @include hover {
-      border-color: $purpleColor;
-      background-color: $purpleColor;
-    }
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }

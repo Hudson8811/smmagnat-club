@@ -1,0 +1,160 @@
+.form {
+  position: relative;
+  margin: 0 auto;
+  width: 603px;
+  padding: 47px 81px 49px 64px;
+  color: $black;
+  background-color: $white;
+
+  &__drawings {
+    position: absolute;
+    top: -312px;
+    left: -215px;
+    width: 375px;
+    height: 495px;
+    background-image: url("../images/form/form-drawings.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &__heading {
+    margin-bottom: 38px;
+
+    &-title {
+      margin-bottom: 18px;
+    }
+  }
+
+  &__input {
+    margin-bottom: 26px;
+    width: 100%;
+    height: 64px;
+    padding: 24px 23px;
+    border-radius: 0;
+  }
+
+  &__type {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 76px;
+    width: 100%;
+    height: 71px;
+
+    &-button {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 216px;
+      height: 100%;
+      outline: 1px solid $black;
+      border: 4px solid $white;
+      cursor: pointer;
+
+      &_active {
+        color: $white;
+        background-color: $black;
+      }
+    }
+
+    &-radio {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+    }
+
+    &-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      &_name {
+        font-size: 14px;
+        letter-spacing: -0.28px;
+      }
+    }
+  }
+
+  &__privacy {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: 56px;
+    margin-bottom: 27px;
+    max-width: 335px;
+    padding-left: 40px;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: -0.33px;
+    cursor: pointer;
+    user-select: none;
+
+    &-link {
+      text-decoration: underline;
+      transition: color ease-out 0.3s;
+
+      @include hover {
+        color: $orange;
+        transition: color ease-out 0.3s;
+      }
+    }
+
+    & input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+
+    &-checkbox {
+      position: absolute;
+      top: 9px;
+      left: 3px;
+      height: 22px;
+      width: 22px;
+      background-color: $white;
+      border: 1px solid $black;
+
+      &:after {
+        content: "";
+        position: absolute;
+        display: none;
+        left: 7px;
+        top: 1px;
+        width: 7px;
+        height: 14px;
+        border: solid $white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+    }
+
+    & input:checked ~ .form__privacy-checkbox {
+      background-color: $black;
+
+      &:after {
+        display: block;
+      }
+    }
+  }
+
+  &__button {
+    width: 100%;
+    height: 64px;
+    color: $white;
+    background-color: $black;
+    transition: background-color ease-out 0.3s;
+
+    @include hover {
+      background-color: $orange;
+      transition: background-color ease-out 0.3s;
+    }
+  }
+}
