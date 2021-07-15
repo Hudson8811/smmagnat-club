@@ -84,6 +84,10 @@
 
     @include max("md") {
       height: vw(98);
+    }
+
+    &-item {
+      height: 100%;
       object-fit: contain;
     }
   }
