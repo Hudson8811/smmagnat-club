@@ -32,6 +32,7 @@
       left: vw(-255);
       width: vw(485);
       height: vw(555);
+      background-size: contain;
     }
   }
 
@@ -255,9 +256,11 @@
         }
 
         @include max("md") {
+          top: 0;
           left: vw(10);
           width: vw(10);
           height: vw(20);
+          border-width: 0 vw(3) vw(3) 0;
         }
       }
     }

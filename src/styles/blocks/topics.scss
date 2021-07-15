@@ -60,10 +60,12 @@
       height: 62px;
       background-image: url("../images/topics/topics-underline.png");
       background-repeat: no-repeat;
+      background-size: contain;
 
       @include max("md") {
         bottom: vw(-50);
         left: vw(-24);
+        width: vw(390);
         height: vw(62);
       }
     }
