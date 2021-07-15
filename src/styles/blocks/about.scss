@@ -3,6 +3,21 @@
   width: 424px;
   padding-top: 192px;
 
+  @include media(1439) {
+    margin: 0;
+    padding: 0;
+  }
+
+  @include media(1220) {
+    margin-bottom: 180px;
+    width: auto;
+  }
+
+  @include max("md") {
+    padding-left: vw(20);
+    margin-bottom: vw(160);
+  }
+
   &-text {
     font-family: $mainFont;
     font-size: 27px;
@@ -11,6 +26,10 @@
     letter-spacing: normal;
     letter-spacing: -0.54px;
     color: $black;
+
+    @include media(1220) {
+      font-size: vw(38, 1000);
+    }
 
     &_white {
       color: $white;
@@ -21,6 +40,10 @@
       padding: 0 13px 2px;
       background-color: $white;
 
+      @include max("md") {
+        padding: 0 vw(13) vw(2);
+      }
+
       &-orange {
         background-color: $orange;
       }
@@ -30,6 +53,10 @@
       position: relative;
       padding: 0 18px 0 13px;
 
+      @include max("md") {
+        padding: 0 vw(18) vw(13);
+      }
+
       &::after {
         content: "";
         position: absolute;
@@ -38,27 +65,56 @@
         right: -13px;
         height: 24px;
         background-image: url("../images/about/cross-line.png");
+
+        @include max("md") {
+          top: vw(6);
+          left: vw(-18);
+          right: vw(-13);
+          height: vw(24);
+          background-repeat: no-repeat;
+          background-size: vw(212);
+        }
       }
     }
   }
 
   &__title {
     margin-bottom: 22px;
+
+    @include max("md") {
+      margin-bottom: vw(33);
+    }
   }
 
   &__description {
     margin-bottom: 54px;
+
+    @include max("md") {
+      margin-bottom: vw(76);
+    }
   }
 
   &__price {
     margin-bottom: 24px;
 
+    @include max("md") {
+      margin-bottom: vw(38);
+    }
+
     &-item {
       margin-right: 16px;
+
+      @include max("md") {
+        margin-right: vw(28);
+      }
     }
   }
 
   &__renewal {
     margin-bottom: 30px;
+
+    @include max("md") {
+      margin-bottom: vw(39);
+    }
   }
 }

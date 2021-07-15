@@ -1,0 +1,59 @@
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+
+  &.active {
+    display: block;
+  }
+
+  &__overlay {
+    position: absolute;
+    z-index: 98;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000805;
+    opacity: 0.52;
+  }
+
+  &__content {
+    position: absolute;
+    z-index: 99;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 707px;
+    padding: 90px 104px 95px 103px;
+    text-align: center;
+    color: $black;
+    background-color: $white;
+
+    // @include media(768) {
+    //   max-width: vw(707, 320);
+    //   width: 90%;
+    // }
+
+    &-title {
+      margin-bottom: 40px;
+      font-family: $mainFont;
+      font-size: 38px;
+      letter-spacing: -0.76px;
+    }
+
+    &-text {
+      &_bold {
+        font-family: $mainFont;
+        font-weight: 700;
+      }
+    }
+  }
+}

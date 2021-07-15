@@ -9,6 +9,14 @@
     max-width: 1920px;
     width: 100%;
     padding: 143px 187px 0 188px;
+
+    @include media(1439) {
+      padding: 99px 95px 0;
+    }
+
+    @include max("md") {
+      padding: vw(99) vw(95) 0;
+    }
   }
 
   &-wrapper {
@@ -17,6 +25,10 @@
     align-items: center;
     justify-content: space-between;
     height: 139px;
+
+    @include media(1439) {
+      height: auto;
+    }
   }
 
   &-contacts {
@@ -40,6 +52,20 @@
       font-size: 18px;
       font-weight: 300;
       opacity: 0.6;
+
+      @include max("md") {
+        font-size: vw(18);
+      }
+    }
+
+    @include max("md") {
+      font-size: vw(21);
+    }
+  }
+
+  &__smmagnat {
+    @include media(1439) {
+      display: none;
     }
   }
 
@@ -48,5 +74,17 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+
+    @include media(1439) {
+      position: relative;
+      left: 0;
+      transform: translateX(0);
+      height: 98px;
+    }
+
+    @include max("md") {
+      height: vw(98);
+      object-fit: contain;
+    }
   }
 }

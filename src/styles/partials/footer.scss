@@ -6,6 +6,10 @@
   color: $black;
   background-color: $white;
 
+  @include max("md") {
+    padding: vw(100) vw(71) vw(116) vw(53);
+  }
+
   &-half {
     display: flex;
     flex-direction: column;
@@ -24,11 +28,25 @@
       margin-bottom: 46px;
       font-size: 40px;
       font-weight: 500;
+
+      @include max("md") {
+        margin-bottom: vw(46);
+        font-size: vw(40);
+      }
     }
 
     &__bottom {
       font-size: 28px;
       opacity: 0.6;
+
+      @include media(1439) {
+        max-width: 294px;
+      }
+
+      @include max("md") {
+        font-size: vw(28);
+        max-width: vw(294);
+      }
     }
   }
 

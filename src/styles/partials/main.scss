@@ -14,7 +14,7 @@ html {
 
   ::-webkit-scrollbar-thumb {
     background-color: $orange;
-    border-radius: none;
+    border-radius: 0;
   }
 
   ::-webkit-scrollbar-corner {
@@ -26,6 +26,10 @@ html {
   }
 
   font-size: 21px; //$fs-main;
+
+  @include media(1220) {
+    font-size: vw(38, 1000);
+  }
 
   // @include media(1200) {
   //   font-size: vw(18, 1200); //$fs-main;
@@ -80,4 +84,8 @@ body {
 
 .blur {
   filter: blur(4px);
+}
+
+.js-no-scroll {
+  overflow: hidden;
 }

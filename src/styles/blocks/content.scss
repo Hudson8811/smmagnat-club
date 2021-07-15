@@ -1,18 +1,44 @@
 .content {
   padding-top: 437px;
+  padding-bottom: 204px;
   background-image: url("../images/background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 
-  height: 2327px;
+  @include media(1439) {
+    padding-top: 343px;
+  }
+
+  @include max("md") {
+    padding-top: vw(343);
+    padding-bottom: vw(163);
+  }
 }
 
 .info {
   display: flex;
   padding-bottom: 198px;
 
+  @include media(1439) {
+    padding: 0 95px 198px;
+    justify-content: space-between;
+  }
+
+  @include media(1220) {
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  @include max("md") {
+    padding: 0 vw(95) vw(318);
+  }
+
   &__half {
     flex-basis: 50%;
+
+    @include media(1220) {
+      flex-basis: 100%;
+    }
   }
 }
