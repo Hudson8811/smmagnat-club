@@ -37,19 +37,29 @@
     color: $black;
     background-color: $white;
 
-    // @include media(768) {
-    //   max-width: vw(707, 320);
-    //   width: 90%;
-    // }
+    @include media(768) {
+      max-width: 707px;
+      width: 90%;
+      padding: vw(90) vw(104) vw(95) vw(103);
+    }
 
     &-title {
       margin-bottom: 40px;
       font-family: $mainFont;
       font-size: 38px;
       letter-spacing: -0.76px;
+
+      @include max("md") {
+        margin-bottom: vw(40);
+        font-size: vw(38);
+      }
     }
 
     &-text {
+      @include media(1220) {
+        font-size: vw(28);
+      }
+
       &_bold {
         font-family: $mainFont;
         font-weight: 700;
