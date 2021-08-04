@@ -113,9 +113,27 @@ block main
 
 					.form__type-text
 						span.form__type-text_name
-							| Вступить
+							| Вступить на 1 месяц
 						span.form__type-text_price 
 							| 2 500 ₽
+
+				.form__type-button
+					input(type="radio" name="payment" value="buy3" required).form__type-radio
+
+					.form__type-text
+						span.form__type-text_name
+							| 3 месяца
+						span.form__type-text_price 
+							| 4 000 ₽
+
+				.form__type-button
+					input(type="radio" name="payment" value="buy6" required).form__type-radio
+
+					.form__type-text
+						span.form__type-text_name
+							| 6 месяцев
+						span.form__type-text_price
+							| 6 000 ₽
 
 				.form__type-button
 					input(type="radio" name="payment" value="renewal" required).form__type-radio
@@ -123,7 +141,7 @@ block main
 					.form__type-text
 						span.form__type-text_name
 							| Продление
-						span.form__type-text_price 
+						span.form__type-text_price
 							| 1 000 ₽
 
 			label.form__privacy
